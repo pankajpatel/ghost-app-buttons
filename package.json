@@ -1,0 +1,33 @@
+{
+"name": "ghost-app-buttons",
+  "version": "0.1.0",
+  "description": "Buttons app for Ghost CMS. It is a helper to automatically convert the post content link's with 'Demo' text to specified class and GitHub links to GitHub buttons.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pankajpatel/ghost-app-buttons.git"
+  },
+  "keywords": [
+    "ghost",
+    "ghost-app"
+  ],
+  "author": "Pankaj Patel (http://pankaj.pro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pankajpatel/ghost-app-buttons/issues"
+  },
+  "homepage": "https://github.com/pankajpatel/ghost-app-buttons#readme",
+  "ghost": {
+    "permissions": {
+      "filters": [
+        "ghost_foot"
+      ]
+    }
+  },
+  "dependencies": {
+    "ghost-app": "0.0.3"
+  }
+}
