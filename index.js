@@ -5,7 +5,15 @@ const ButtonsApp = App.extend({
     ghost_foot: 'handleGhostFoot'
   },
 
-  handleGhostFoot: (ghost_foot, _) => _.reject(ghost_foot, (item) => (/jquery\.js/.test(item)))
+  handleGhostFoot: (ghost_foot) => ghost_foot.filter(item => (/jquery\.js/.test(item))),
+
+  install: () => { console.log('installed app') },
+
+  uninstall: () => { console.log('uninstalled app') },
+
+  activate: () => { console.log('activated app') },
+
+  deactivate: () => { console.log('deactivated app') },
 });
 
 module.exports = ButtonsApp;
